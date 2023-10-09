@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phase 1 Project</title>
+    <!-- css reset: sindresorhus/modern-normalize
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -30,6 +33,28 @@
 
     <!--main begins-->
     <main>
+        <section class="search-form">
+            <h2>Form Section</h2>
+            <form action="GET" IDE="meal-form">
+                <label for="search-terms">Search term:</label>
+                <input type="text" name="" id="" placeholder="input search term" required>
+
+                <br />
+
+                <label for="category-filter">Category-filter:</label>
+                <select name="category" id="category-filter">
+                    <option value="option 1">option 1</option>
+                    <option value="option 2">option 2</option>
+                    <option value="option 3">option 3</option>
+                </select>
+
+                <br />
+
+                <input type="submit" value="Search">
+            </form>
+
+        </section>
+
         <section id="section1">
             <h2>Section 1</h2>
             <img src="#" alt="some image">

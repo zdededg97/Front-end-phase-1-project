@@ -1,5 +1,7 @@
 # Front-end-phase-1-project
+
 My flatiron phase 1 front-end project
+
 # Pokémon Explorer - Project One
 
 Welcome to Pokémon Explorer, a simple web application that allows users to explore information about Pokémon using the PokeAPI.
@@ -21,6 +23,7 @@ This project is a part of my front-end engineering course, and it aims to demons
 2. **Open the HTML File:** Open the `index.html` file in your web browser.
 
 3. **Search for Pokémon:**
+
    - Enter the name or ID of a Pokémon in the search bar.
    - Click the "Search" button to fetch and display information about the Pokémon.
 
@@ -47,4 +50,3 @@ This project is a part of my front-end engineering course, and it aims to demons
 ## License
 
 This project is licensed under the [GNU General Public License (GPL)](LICENSE). You are free to modify and distribute this project in accordance with the terms of the GPL.
-

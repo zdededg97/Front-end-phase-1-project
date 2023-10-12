@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phase 1 Project</title>
-    <!-- css reset: sindresorhus/modern-normalize
-    -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -13,10 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
   </head>
+
   <body>
     <!-- header begins-->
     <header id="top">
@@ -24,13 +22,13 @@
       <nav>
         <ul>
           <li>
-            <a href="#section1"></a>
+            <a href="#section1">Section 1</a>
           </li>
           <li>
-            <a href="#section2"></a>
+            <a href="#section2">Section 2</a>
           </li>
           <li>
-            <a href="#section3"></a>
+            <a href="#section3">Section 3</a>
           </li>
         </ul>
       </nav>
@@ -41,7 +39,7 @@
     <main>
       <section class="search-form">
         <h2>Form Section</h2>
-        <form action="GET" id="meal-form">
+        <form method="GET" id="meal-form">
           <label for="search-terms">Search term:</label>
           <input
             type="text"
@@ -68,16 +66,20 @@
 
       <section id="section1">
         <h2>Section 1</h2>
-        <img src="#" alt="some image" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos
-          earum nulla temporibus maxime fuga laudantium, vero commodi obcaecati
-          in libero laboriosam soluta ipsam iusto ut! In ad ullam itaque?
-        </p>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Placeholder image for section 1"
+        />
+        <p>Lorem ipsum ...</p>
+        <!-- Here's the abilities container -->
+        <div id="abilities-container"></div>
       </section>
       <section id="section2">
         <h2>Section 2</h2>
-        <img src="#" alt="some image" />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Placeholder image for section 2"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos
           earum nulla temporibus maxime fuga laudantium, vero commodi obcaecati
@@ -86,21 +88,23 @@
       </section>
       <section id="section3">
         <h2>Section 3</h2>
-        <img src="#" alt="some image" />
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Placeholder image for section 3"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos
           earum nulla temporibus maxime fuga laudantium, vero commodi obcaecati
           in libero laboriosam soluta ipsam iusto ut! In ad ullam itaque?
         </p>
       </section>
-      <h2>Search Input Section</h2>
     </main>
     <!--main ends-->
 
     <!--footer begins-->
     <footer>
       <p>Copyright YOUR NAME 2023</p>
-      <a href="top">Back to top</a>
+      <a href="#top">Back to top</a>
     </footer>
     <!--footer ends-->
   </body>

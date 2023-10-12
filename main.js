@@ -1,23 +1,34 @@
 console.log("main.js connected");
 
-const searchTermsInput = document.body.querySelector("#search-terms");
+const searchTermsInput = document.querySelector("#search-terms");
+const abilitiesContainer = document.querySelector("#abilities-container");
+
+const displayAbilities = (abilities) => {
+  const abilitiesHTML = abilities
+    .map((ability) => `<p>${ability.name}</p>`)
+    .join("");
+
+  abilitiesContainer.innerHTML = abilitiesHTML;
+};
 
 const getPokeCategories = async () => {
   const PokeCategoriesApiURL = "https://pokeapi.co/api/v2/ability/150/";
 
   try {
     const response = await fetch(PokeCategoriesApiURL);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
     const data = await response.json();
-    console.log("data: ", data);
+    displayAbilities(data.abilities);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     alert("Something went wrong, try again later");
   }
 };
 
 const handleFormInputFocus = async () => {
   console.log("focus occurred");
-
   await getPokeCategories();
 };
 

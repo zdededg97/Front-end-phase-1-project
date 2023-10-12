@@ -22,7 +22,7 @@ const getPokeCategories = async () => {
     const data = await response.json();
     displayAbilities(data.abilities);
   } catch (error) {
-    console.error(error);
+    console.error(error); // It's a better practice to use console.error for errors
     alert("Something went wrong, try again later");
   }
 };
